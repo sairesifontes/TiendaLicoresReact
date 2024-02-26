@@ -14,6 +14,7 @@ const ItemListContainer = () => {
     const [titulo, setTitulo] = useState("Licores")
 
 
+    //Muestra los productos depende la categoria que seleccione
     useEffect (() => {
 
         const licoresRef = collection(db, "licores")

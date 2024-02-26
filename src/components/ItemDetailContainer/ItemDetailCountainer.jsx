@@ -13,9 +13,8 @@ const ItemDetailContainer = () => {
     const [item, setItem] = useState(null)
     const id = useParams().id
 
-    console.log(id)
 
-
+    //Obtenemos los datos de firebase
     useEffect(() => {
 
         const docRef = doc(db, "licores", id)

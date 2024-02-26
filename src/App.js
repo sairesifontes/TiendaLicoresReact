@@ -6,6 +6,7 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import NavBar from './components/NavBar/NavBar';
 import Carrito from './components/Carrito/Carrito';
 import { CartProvider } from './CartContext/CartContex';
+import Checkout from './components/Checkout/Checkout';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
                     <Route path='/licores/:categoria' element={<ItemListContainer />} />
                     <Route path='/item/:id' element={<ItemDetailContainer />} />
                     <Route path='/carrito' element={<Carrito />} />
+                    <Route path='/checkout' element={<Checkout />} />
                 </Routes>
 
             </BrowserRouter>

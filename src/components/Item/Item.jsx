@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-
+//muestra los productos
 const Item = ( {licor} ) => {
 
     return (
@@ -12,7 +12,7 @@ const Item = ( {licor} ) => {
             <div className='m-5 p-2 items-center'>
                 <h3 className='m-2 font-bold'>{licor.nombre}</h3>
                 <p className='m-2'>Precio: ${licor.precio}</p>
-                <button className='rounded-full bg-[#fecaca] w-24'><Link className="ver-mas" to={`/item/${licor.id}`}>Ver más</Link></button>
+                <button className='rounded-full bg-[#fecaca] w-24 hover:bg-rose-500'><Link className="ver-mas" to={`/item/${licor.id}`}>Ver más</Link></button>
             </div>
         </div>
     )
